@@ -10,7 +10,7 @@
 
 .lead__title {
   margin: 90px auto 0px;
-  width: 720px;
+  /*width: 720px;*/
   font-weight: bold;
   font-size: 96px;
   line-height: 100px;
@@ -27,4 +27,49 @@
 .lead__image {
   width: 984px;
   margin: 64px auto;
+}
+
+@media screen and (max-width: 768px) {
+  .lead {
+    width: 100vw;
+    margin: 0 auto;
+  }
+  .lead__title {
+    font-size: 75px;
+    line-height: 79px;
+  }
+  .lead__subtitle {
+    width: 100vw;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .lead__image {
+    width: 100vw;
+    margin: 30px auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .lead {
+    width: 100vw;
+    margin: 0 auto;
+  }
+  .lead__logo {
+    margin: 0 auto 0px;
+    width: 188px;
+  }
+  .lead__title {
+    margin: 50px auto 0px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .lead__subtitle {
+    width: 100vw;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .lead__image {
+    width: 100vw;
+    margin: 40px auto;
+  }
 }
