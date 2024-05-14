@@ -11,7 +11,7 @@
 .lead__title {
   margin: 90px auto 0px;
   width: 720px;
-  font-family: "Inter-Bold", Arial, sans-serif;
+  font-weight: bold;
   font-size: 96px;
   line-height: 100px;
   text-align: center;

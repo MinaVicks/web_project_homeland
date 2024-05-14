@@ -8,7 +8,7 @@
 }
 
 .intro__text-title {
-  font-family: "Inter-Bold";
+  font-weight: bold;
   font-size: 54px;
   line-height: 58px;
   text-align: left;
