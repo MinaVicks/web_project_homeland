@@ -1,9 +1,9 @@
 .place {
     height: 1000px;
     width: 984px;
-    margin: 80px 100px 0px;
+
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 50% 50%;
     grid-template-rows: 2fr 4fr 1fr;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -23,6 +23,9 @@
     max-height: 100%;
     object-fit: cover;
     box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+}
+.place__image:hover {
+    opacity: 50%;
 }
 .place__title {
     font-weight: bold;
@@ -77,4 +80,8 @@
     font-size: 18px;
     line-height: 1.15;
     text-align: center;
+}
+
+.place__button:hover {
+    opacity: 40%;
 }
