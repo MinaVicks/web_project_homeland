@@ -6,7 +6,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    grid-gap: 40px;
+    gap: 40px;
     margin: 0 auto;
     min-height: 0; /* NEW */
     min-width: 0;
@@ -90,10 +90,11 @@
 
 @media screen and (max-width: 768px) {
     .place {
-        max-width: calc(100vw - 10%);
+        max-width: calc(100vw - 5%);
         grid-template-columns: 50% 50%;
         grid-template-rows: 0.5fr 2fr 1fr;
         padding-right: 5%;
+        margin: 50px auto;
     }
     .place__paragraph {
         font-size: 16px;
@@ -104,41 +105,47 @@
         font-size: 42px;
     }
 }
+
 @media screen and (max-width: 320px) {
     .place {
         max-width: 100vw;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 0.2fr 1fr 1fr 1fr 0.5fr;
-        grid-gap: 30px;
+        grid-template-rows: max-content;
+        gap: 30px;
+        margin: 50px auto;
+        padding: 0px;
     }
     .place__paragraph {
-        margin: 0px auto;
-        max-width: calc(100vw - 10%);
+        padding: 0px 2.5%;
         font-size: 16px;
         line-height: 1.5;
-        margin-top: 0px;
+    }
+    .place__website {
+        padding: 0px 2.5%;
     }
 
     .place__title {
+        padding: 0px 2.5%;
         font-size: 32px;
-        padding: 5%;
     }
-    .place__website {
-        padding: 0px 5%;
-        margin: 0px;
-    }
+
     .place__button {
-        padding: 5%;
-        max-width: 100vw;
+        width: calc(100vw - 5%);
+        margin: 0px auto;
         display: flex;
+        padding: 5% 15%;
         align-items: center;
-        justify-content: center;
+    }
+    .place__button-link {
         font-size: 14px;
+        text-align: center;
     }
-    .place__url-heading {
-        margin: 0px;
+
+    .place__image {
+        max-width: 100vw;
+        min-width: 0px;
     }
-    .place__artist {
+    .place__item:nth-child(4) {
         margin: 0px;
     }
 }
