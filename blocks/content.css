@@ -18,6 +18,10 @@
 .content__text-author {
     text-align: right;
 }
+
+.content__text-quote {
+    font-size: 24px;
+}
 .content__text-footer {
     font-size: 16px;
 }
@@ -38,6 +42,9 @@
         line-height: 1.5;
         margin-bottom: 50px;
     }
+    .content__text-footer {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -55,5 +62,8 @@
     .content__text-title {
         font-size: 32px;
         line-height: 1.5;
+    }
+    .content__text-footer {
+        font-size: 16px;
     }
 }
